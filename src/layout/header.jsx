@@ -57,11 +57,11 @@ export default function Header({ title, type, description }) {
 
         <title>{pageTitle}</title>
 
-        <link rel="apple-touch-icon" href="/img/falcon-1.png" />
+        {/* <link rel="apple-touch-icon" href="/img/favicon.svg" /> */}
         <link
           rel="icon"
-          href="/img/falcon-1.png"
-          type="image/png"
+          href="/img/favicon.svg"
+          type="image/svg+xml"
           sizes="16x16"
         />
         {/*
