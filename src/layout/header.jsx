@@ -96,7 +96,7 @@ export default function Header({ title, type, description }) {
               />
             </svg> */}
             <img
-              src={logo}
+              src="/img/falcon-1.png"
               style={{ maxHeight: '50px', width: 'auto' }}
               alt="falcomImg.png"
             />
