@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-garden",
+  "name": "muhibarshad-doc",
   "version": "2.2.2",
-  "description": "Gatsby Garden lets you create a static html version of your markdown notes. You can convert your Obsidian Zettelkasten Notes into a public Digital Garden.",
+  "description": "Muhib Arshad",
   "homepage": "https://github.com/binnyva/gatsby-garden",
   "keywords": [
     "markdown",
@@ -14,7 +14,7 @@
     "digital-garden",
     "obsidian"
   ],
-  "author": "Binny V A <binnyva@gmail.com>",
+  "author": "muhibarshad",
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",

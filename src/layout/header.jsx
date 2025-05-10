@@ -18,7 +18,7 @@ import DarkMode from '../components/dark-mode'
 export default function Header({ title, type, description }) {
   const menu = DefaultMenuStructure('header')
   const pageTitle =
-    (siteConfig.siteMetadata.title || 'Gatsby Garden') +
+    (siteConfig.siteMetadata.title || 'muhibarshad') +
     (title ? ` : ${title}` : '')
 
   const handleHamburgerMenuClick = e => {
@@ -94,7 +94,7 @@ export default function Header({ title, type, description }) {
                 fill="var(--text-main)"
               />
             </svg>
-            <h4>{siteConfig.siteMetadata.title || 'Gatsby Garden'}</h4>
+            <h4>{siteConfig.siteMetadata.title || 'muhibarshad'}</h4>
           </Link>
           <div className="navbar-item navbar-dark-mode__mobile is-hidden-tablet">
             <DarkMode />

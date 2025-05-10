@@ -1,4 +1,4 @@
-@import "variables.css";
+@import 'variables.css';
 
 #graph-container {
   border: 1px solid var(--border);
@@ -16,7 +16,6 @@ text:hover {
 #graph-container svg {
   width: 100% !important;
 }
-
 
 .note-graph {
   background-color: var(--bg-sub);

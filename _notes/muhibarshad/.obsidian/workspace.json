@@ -1,0 +1,205 @@
+{
+  "main": {
+    "id": "8646580ae15ec847",
+    "type": "split",
+    "children": [
+      {
+        "id": "bbd5377bb433dc4a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "57c9a74c317ca0fd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Towards Allah/Gen Z and Alpha issues and solutions/13. Vibes.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "13. Vibes"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "0e4260361134b418",
+    "type": "split",
+    "children": [
+      {
+        "id": "f9580a61af5cd38a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3a38ca5ce716ca9c",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "a52e68ccabb3e818",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "4516371aecb48267",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "25a289f1ea4604b8",
+    "type": "split",
+    "children": [
+      {
+        "id": "cb6dbd5f4acd4707",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b3ec12227bfba704",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Towards Allah/Gen Z and Alpha issues and solutions/13. Vibes.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for 13. Vibes"
+            }
+          },
+          {
+            "id": "f6c41fbf1a5bcd4a",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Towards Allah/Gen Z and Alpha issues and solutions/13. Vibes.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from 13. Vibes"
+            }
+          },
+          {
+            "id": "f79146376266be51",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "66c963fc92c501f3",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Towards Allah/Gen Z and Alpha issues and solutions/13. Vibes.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of 13. Vibes"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "57c9a74c317ca0fd",
+  "lastOpenFiles": [
+    "Towards Allah/Gen Z and Alpha issues and solutions/12. Spiritual Healing and Mental Turmoil.md",
+    "Towards Allah/Basics/2. Who are you.md",
+    "muhibarshad.md",
+    "Towards Allah/Basics/2. Who are you ?.md",
+    "Towards Allah/Basics/1. Fastest Evidences to GOD exists.md",
+    "Towards Allah/Basics/3. We all have knowledge, not belief..md",
+    "Towards Allah/What we have to do ?/26. Conclusion.md",
+    "Towards Allah/What we have to do ?/25. Goals.md",
+    "Towards Allah/What we have to do ?/24. Prayer.md",
+    "Towards Allah/What we have to do ?/23. Biggest Injustice.md",
+    "Towards Allah/What we have to do ?/22. How to revive Ummah.md",
+    "Towards Allah/What we have to do ?/21. How to select effect spouse ?.md",
+    "Towards Allah/How to come out froms sins forever/20. UnCondiotional Pure True Love.md",
+    "Towards Allah/How to come out froms sins forever/19. سب سے بڑا زہر اور اُس کا تریاق.md",
+    "Towards Allah/How to come out froms sins forever/18. Unconsious Sins.md",
+    "Towards Allah/How to come out froms sins forever/17. Satan and Sin.md",
+    "Towards Allah/How to come out froms sins forever/16. صحبت.md",
+    "Towards Allah/Gen Z and Alpha issues and solutions/15 . صبر.md",
+    "Towards Allah/Gen Z and Alpha issues and solutions/14. حُسن پرستی اور آواز پرستی.md",
+    "Towards Allah/Gen Z and Alpha issues and solutions/13. Vibes.md",
+    "Towards Allah/Gen Z and Alpha issues and solutions/11. Gamble of life.md",
+    "Towards Allah/Gen Z and Alpha issues and solutions/10. Split personality disorder in gen z,alpha.md",
+    "Towards Allah/Gen Z and Alpha issues and solutions/9. Delulu is Solulu.md",
+    "Towards Allah/Gen Z and Alpha issues and solutions/8. The biggest issue of the world.md",
+    "Towards Allah/Gen Z and Alpha issues and solutions/7. Conditioning process of brain.md",
+    "Towards Allah/Gen Z and Alpha issues and solutions/6. We are all becoming increasingly agnostic to ourselves.md",
+    "Towards Allah/How to come out froms sins forever",
+    "Towards Allah/What we have to do ?",
+    "Towards Allah/Gen Z and Alpha issues and solutions",
+    "Towards Allah/Basics",
+    "Towards Allah"
+  ]
+}
