@@ -10,8 +10,3 @@ import './src/styles/common/bulma.css'
 import './src/styles/common/style.css'
 import './src/styles/common/custom.css'
 import './src/styles/common/util.css'
-
-if (process.env.NODE_ENV === 'production') {
-  const { inject } = require('@vercel/analytics')
-  inject()
-}
