@@ -14,6 +14,7 @@ import {
 } from '../utils/menu-structure'
 
 import DarkMode from '../components/dark-mode'
+import logo from '../../public/img/falcon-1.png'
 
 export default function Header({ title, type, description }) {
   const menu = DefaultMenuStructure('header')
@@ -57,10 +58,10 @@ export default function Header({ title, type, description }) {
 
         <title>{pageTitle}</title>
 
-        <link rel="apple-touch-icon" href="/img/favicon.png" />
+        <link rel="apple-touch-icon" href="/img/falcon-1.png" />
         <link
           rel="icon"
-          href="/img/favicon.png"
+          href="/img/falcon-1.png"
           type="image/png"
           sizes="16x16"
         />
@@ -80,7 +81,7 @@ export default function Header({ title, type, description }) {
       >
         <div className="navbar-brand">
           <Link className="navbar-item" to="/">
-            <svg
+            {/* <svg
               width="32"
               height="32"
               viewBox="0 0 80 80"
@@ -93,7 +94,12 @@ export default function Header({ title, type, description }) {
                 d="M36.9477 13.7742C38.3043 11.4086 41.6957 11.4086 43.0523 13.7742L70.5226 61.6774C71.8791 64.043 70.1834 67 67.4703 67H12.5297C9.81658 67 8.12089 64.043 9.47744 61.6774L36.9477 13.7742ZM40 16.9677L13.7506 62.7419H66.2494L40 16.9677Z"
                 fill="var(--text-main)"
               />
-            </svg>
+            </svg> */}
+            <img
+              src={logo}
+              style={{ maxHeight: '50px', width: 'auto' }}
+              alt="falcomImg.png"
+            />
             <h4>{siteConfig.siteMetadata.title || 'muhibarshad'}</h4>
           </Link>
           <div className="navbar-item navbar-dark-mode__mobile is-hidden-tablet">

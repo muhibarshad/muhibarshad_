@@ -5,9 +5,9 @@ module.exports = {
 
   siteMetadata: {
     title: `muhibarshad-doc`,
-    description: `Hi there, Muhib Arshad `,
+    description: `Hi there, Muhib Arshad – Software Engineer & Full Stack Developer (PUCIT '25). Passionate about web development, Islamic scholarship, and self-discovery. On a journey to follow the Sunnah while exploring life’s deeper truths. `,
 
-    siteUrl: `https://yoursite.com/notes/`,
+    siteUrl: `https://muhibarshad-doc.netlify.app/`,
     headerMenu: [
       { type: 'page', item: '', title: 'Home' },
       { type: 'page', item: 'sitemap', title: 'Sitemap' },

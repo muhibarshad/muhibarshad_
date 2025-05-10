@@ -3,7 +3,7 @@ title: muhibarshad
 tags:
   - About
 slug: 'muhibarshad'
-date: 2024-06-30 19:30:00
+date: 2025-05-10 04:05:00
 ---
 
 - **Occupation**: Software Engineer, PUCIT'25

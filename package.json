@@ -2,7 +2,7 @@
   "name": "muhibarshad-doc",
   "version": "2.2.2",
   "description": "Muhib Arshad",
-  "homepage": "https://github.com/binnyva/gatsby-garden",
+  "homepage": "https://github.com/muhibarshad/muhibarshad_",
   "keywords": [
     "markdown",
     "mdx",
@@ -62,9 +62,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/binnyva/gatsby-garden"
+    "homepage": "https://github.com/muhibarshad/muhibarshad_"
   },
   "bugs": {
-    "url": "https://github.com/binnyva/gatsby-garden/issues"
+  "homepage": "https://github.com/muhibarshad/muhibarshad_"
   }
 }
