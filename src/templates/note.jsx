@@ -8,6 +8,8 @@ import Tooltip from '../components/tooltip'
 import Layout from '../layout/layout'
 import '../styles/note.css'
 import '../styles/graph.css'
+import '../styles/common/comment.css'
+import Comments from '../components/comments'
 const makeSlug = require('../utils/make-slug')
 const moment = require('moment')
 
@@ -212,6 +214,10 @@ export default function Note({ pageContext, data }) {
 
             <div className="note-graph">
               <Graph graph={graph} options={options} events={events} />
+            </div>
+            <div className="comments-section">
+              <h3 className="block-title">Discussion</h3>
+              <Comments title={post.fields.title} />
             </div>
           </div>
         </main>

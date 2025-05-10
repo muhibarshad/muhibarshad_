@@ -1,0 +1,15 @@
+.comments-section {
+  margin: 3rem 0;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.comments-section .block-title {
+  margin-bottom: 1.5rem;
+  font-size: 1.25rem;
+  color: var(--text-main);
+}
+
+.giscus-comments {
+  margin-top: 1rem;
+}
