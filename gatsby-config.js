@@ -22,7 +22,7 @@ module.exports = {
           // { type: 'tag', item: 'rationality' },
         ],
       },
-      { type: 'note', item: 'muhibarshad-welcome', title: 'About' }, // 👈 Add this line
+      { type: 'note', item: 'muhibarshad', title: 'About' }, // 👈 Add this line
     ],
 
     hoverPreview: true,

@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "bbd5377bb433dc4a",
+        "id": "b34a33319abd18a4",
         "type": "tabs",
         "children": [
           {
-            "id": "57c9a74c317ca0fd",
+            "id": "ce71bc0877a89782",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Towards Allah/Gen Z and Alpha issues and solutions/13. Vibes.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "13. Vibes"
+              "title": "New tab"
             }
           }
         ]
@@ -168,8 +164,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "57c9a74c317ca0fd",
+  "active": "ce71bc0877a89782",
   "lastOpenFiles": [
+    "Untitled.md",
+    "Towards Allah/Gen Z and Alpha issues and solutions/13. Vibes.md",
     "Towards Allah/Gen Z and Alpha issues and solutions/12. Spiritual Healing and Mental Turmoil.md",
     "Towards Allah/Basics/2. Who are you.md",
     "muhibarshad.md",
@@ -189,13 +187,11 @@
     "Towards Allah/How to come out froms sins forever/16. صحبت.md",
     "Towards Allah/Gen Z and Alpha issues and solutions/15 . صبر.md",
     "Towards Allah/Gen Z and Alpha issues and solutions/14. حُسن پرستی اور آواز پرستی.md",
-    "Towards Allah/Gen Z and Alpha issues and solutions/13. Vibes.md",
     "Towards Allah/Gen Z and Alpha issues and solutions/11. Gamble of life.md",
     "Towards Allah/Gen Z and Alpha issues and solutions/10. Split personality disorder in gen z,alpha.md",
     "Towards Allah/Gen Z and Alpha issues and solutions/9. Delulu is Solulu.md",
     "Towards Allah/Gen Z and Alpha issues and solutions/8. The biggest issue of the world.md",
     "Towards Allah/Gen Z and Alpha issues and solutions/7. Conditioning process of brain.md",
-    "Towards Allah/Gen Z and Alpha issues and solutions/6. We are all becoming increasingly agnostic to ourselves.md",
     "Towards Allah/How to come out froms sins forever",
     "Towards Allah/What we have to do ?",
     "Towards Allah/Gen Z and Alpha issues and solutions",
