@@ -19,7 +19,7 @@ module.exports = {
           // { type: 'tag', item: 'Islam' },
           { type: 'tag', item: 'Towards-Allah' },
           { type: 'tag', item: 'Prayers' },
-          { type: 'tag', item: 'Computer Science' },
+          { type: 'tag', item: 'computer_science' },
         ],
       },
       { type: 'note', item: 'muhibarshad', title: 'About' }, // 👈 Add this line
