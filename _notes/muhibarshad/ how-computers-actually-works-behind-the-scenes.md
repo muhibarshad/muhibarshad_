@@ -1,10 +1,11 @@
 ---
 title: How Computers Actually Work Behind the Scenes
 tags:
-  - computer_science
+  - Computing
 slug: how-computers-actually-works-behind-the-scenes
 date: 2025-05-26 21:45:00
 ---
+
 In ancient times, people created a simple abacus to identify numbers and perform arithmetic operations, such as addition and subtraction. Did you know that before 1800, the term "computer" referred to a person who used any machine or performed extensive calculations on their own? Later, it came to be associated with machines that carried out mathematical operations. During World War II, handwritten square roots were used by people to calculate and launch bombs.
 
 At some point, people began to consider the need for a machine that could perform the same mathematical operations as humans, including problem-solving and solving complex equations. They adopted the same techniques that humans used.
@@ -39,13 +40,13 @@ For processing, we can start by performing common operations such as addition, l
 For example, when we add two "1" digits together, we obtain the result "2," which in binary is represented as "10." Therefore, the output for the sum becomes "0" and a carry of "1" is propagated to the next digit.
 Similarly,
 
-1 0 = 1 
+1 0 = 1
 0 1 = 1
 1 1 = 0
 0 0 = 0
 
-For the following queries: 
-1 1 = 1 
+For the following queries:
+1 1 = 1
 1 0 = 0
 0 1 = 0
 0 0 = 0

@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "b34a33319abd18a4",
+        "id": "04a00cad54f41230",
         "type": "tabs",
         "children": [
           {
-            "id": "88f0511368f19486",
+            "id": "458f688f825104cb",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Dua's/Duas.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Duas"
+              "title": "New tab"
             }
           }
         ]
@@ -74,8 +70,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -170,7 +165,7 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "88f0511368f19486",
+  "active": "3a38ca5ce716ca9c",
   "lastOpenFiles": [
     " how-computers-actually-works-behind-the-scenes.md",
     "how.md",

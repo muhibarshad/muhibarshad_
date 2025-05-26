@@ -2,7 +2,7 @@
 title: Prayers Collection
 tags:
   - Prayers
-slug: prayers
+slug: prayers-collection
 date: 2025-05-26 1:45:00
 ---
 
