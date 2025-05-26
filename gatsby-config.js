@@ -18,8 +18,8 @@ module.exports = {
         menu: [
           // { type: 'tag', item: 'Islam' },
           { type: 'tag', item: 'Towards-Allah' },
-          // { type: 'tag', item: 'psychology' },
-          // { type: 'tag', item: 'rationality' },
+          { type: 'tag', item: 'Prayers' },
+          { type: 'tag', item: 'Computer Science' },
         ],
       },
       { type: 'note', item: 'muhibarshad', title: 'About' }, // 👈 Add this line
