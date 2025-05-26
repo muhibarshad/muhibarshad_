@@ -1,7 +1,7 @@
 ---
-title: Manzil
+title: Dua Kadha
 tags:
-  - Dua
+  - Prayers
 slug: dua-kadha
 date: 2025-05-26 21:45:00
 ---

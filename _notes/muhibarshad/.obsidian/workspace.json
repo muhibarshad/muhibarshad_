@@ -8,20 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "8a5e93c9b21a9d0e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "How Computers Actually works behind the scenes.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "How Computers Actually works behind the scenes"
-            }
-          },
-          {
             "id": "88f0511368f19486",
             "type": "leaf",
             "state": {
@@ -67,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:Dua,",
+                "query": "tag:Science",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -88,7 +74,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -183,15 +170,18 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "8a5e93c9b21a9d0e",
+  "active": "88f0511368f19486",
   "lastOpenFiles": [
+    " how-computers-actually-works-behind-the-scenes.md",
+    "how.md",
+    "slug: how-computers-actually-works-behind-the-scenes.md",
+    "Dua's/Duas.md",
+    "How Computers Actually works behind the scenes.md",
     "My self",
     "generator.md",
     "Map.md",
-    "How Computers Actually works behind the scenes.md",
     "muhibarshad.md",
     "Dua's/dua_01.md",
-    "Dua's/Duas.md",
     "Dua's/prayers.md",
     "Dua's/manzil.md",
     "Towards Allah/Basics/1. Fastest Evidences to GOD exists.md",
@@ -225,11 +215,8 @@
     "Towards Allah/What we have to do ?/22. How to revive Ummah.md",
     "Towards Allah/What we have to do ?/21. How to select effect spouse ?.md",
     "Towards Allah/How to come out froms sins forever/20. UnCondiotional Pure True Love.md",
-    "Towards Allah/How to come out froms sins forever/19. سب سے بڑا زہر اور اُس کا تریاق.md",
-    "Towards Allah/How to come out froms sins forever/18. Unconsious Sins.md",
     "Towards Allah/How to come out froms sins forever",
     "Towards Allah/What we have to do ?",
-    "Towards Allah/Gen Z and Alpha issues and solutions",
-    "Towards Allah/Basics"
+    "Towards Allah/Gen Z and Alpha issues and solutions"
   ]
 }

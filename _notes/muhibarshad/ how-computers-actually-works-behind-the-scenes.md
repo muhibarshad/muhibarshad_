@@ -1,7 +1,7 @@
 ---
 title: How Computers Actually Work Behind the Scenes
 tags:
-  - Computer Science
+  - computer_science
 slug: how-computers-actually-works-behind-the-scenes
 date: 2025-05-26 21:45:00
 ---

@@ -1,7 +1,7 @@
 ---
 title: Manzil
 tags:
-  - Dua
+  - Prayers
   - Manzil
 slug: manzil
 date: 2025-05-26 21:45:00

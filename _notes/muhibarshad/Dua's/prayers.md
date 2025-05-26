@@ -1,7 +1,7 @@
 ---
 title: Prayers
 tags:
-  - Dua
+  - Prayers
   - Manzil
 slug: prayers
 date: 2025-05-26 21:45:00

@@ -1,7 +1,7 @@
 ---
-title: Dua's
+title: Prayers Collection
 tags:
-  - Dua
+  - Prayers
 slug: prayers
 date: 2025-05-26 1:45:00
 ---
