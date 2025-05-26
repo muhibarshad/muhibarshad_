@@ -11,7 +11,7 @@ date: 2025-05-26 21:45:00
 
 This section contains links to important collections of duas (prayers) that are significant for spiritual reflection and guidance.
 
-## [Duas Collection](paryers-collection)
+## [Duas Collection](prayers-collection)
 
 This document contains a rich collection of images related to various duas. These images provide visual context and can serve as a helpful reference for understanding and reciting the duas. Explore this collection to deepen your spiritual practice.
 
