@@ -8,13 +8,31 @@
         "type": "tabs",
         "children": [
           {
-            "id": "ce71bc0877a89782",
+            "id": "8a5e93c9b21a9d0e",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "How Computers Actually works behind the scenes.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "How Computers Actually works behind the scenes"
+            }
+          },
+          {
+            "id": "88f0511368f19486",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Dua's/Duas.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Duas"
             }
           }
         ]
@@ -49,7 +67,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:Dua,",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -161,18 +179,44 @@
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "templater-obsidian:Templater": false
     }
   },
-  "active": "ce71bc0877a89782",
+  "active": "8a5e93c9b21a9d0e",
   "lastOpenFiles": [
-    "Untitled.md",
+    "My self",
+    "generator.md",
+    "Map.md",
+    "How Computers Actually works behind the scenes.md",
+    "muhibarshad.md",
+    "Dua's/dua_01.md",
+    "Dua's/Duas.md",
+    "Dua's/prayers.md",
+    "Dua's/manzil.md",
+    "Towards Allah/Basics/1. Fastest Evidences to GOD exists.md",
+    "Dua's/Dua_kadha/IMG_20250124_131432.jpg",
+    "Dua's/Dua_kadha/IMG_20250124_131427.jpg",
+    "Dua's/Dua_kadha/IMG_20250124_131425.jpg",
+    "Dua's/Dua_kadha/IMG_20250124_131421.jpg",
+    "Dua's/Dua_kadha/IMG_20250124_131417.jpg",
+    "Dua's/Dua_kadha/IMG_20250124_131412.jpg",
+    "Dua's/Dua_kadha/IMG_20250124_131409.jpg",
+    "Dua's/Dua_kadha",
+    "Dua's/Manzil/Screenshot_2025-01-17-20-57-21-569_com.muslim.manzil.jpg",
+    "Dua's/Manzil/Screenshot_2025-01-17-20-57-20-018_com.muslim.manzil.jpg",
+    "Dua's/Manzil/Screenshot_2025-01-17-20-57-18-555_com.muslim.manzil.jpg",
+    "Dua's/Manzil",
+    "Towards Allah/manzil.md",
+    "Towards Allah/Manzil",
+    "Towards Allah/Dua_kadha",
+    "Dua's/Manzil/manzil.md",
+    "generate_duas_md.sh",
+    "Dua's/generate_duas_md.sh",
     "Towards Allah/Gen Z and Alpha issues and solutions/13. Vibes.md",
     "Towards Allah/Gen Z and Alpha issues and solutions/12. Spiritual Healing and Mental Turmoil.md",
     "Towards Allah/Basics/2. Who are you.md",
-    "muhibarshad.md",
     "Towards Allah/Basics/2. Who are you ?.md",
-    "Towards Allah/Basics/1. Fastest Evidences to GOD exists.md",
     "Towards Allah/Basics/3. We all have knowledge, not belief..md",
     "Towards Allah/What we have to do ?/26. Conclusion.md",
     "Towards Allah/What we have to do ?/25. Goals.md",
@@ -183,19 +227,9 @@
     "Towards Allah/How to come out froms sins forever/20. UnCondiotional Pure True Love.md",
     "Towards Allah/How to come out froms sins forever/19. سب سے بڑا زہر اور اُس کا تریاق.md",
     "Towards Allah/How to come out froms sins forever/18. Unconsious Sins.md",
-    "Towards Allah/How to come out froms sins forever/17. Satan and Sin.md",
-    "Towards Allah/How to come out froms sins forever/16. صحبت.md",
-    "Towards Allah/Gen Z and Alpha issues and solutions/15 . صبر.md",
-    "Towards Allah/Gen Z and Alpha issues and solutions/14. حُسن پرستی اور آواز پرستی.md",
-    "Towards Allah/Gen Z and Alpha issues and solutions/11. Gamble of life.md",
-    "Towards Allah/Gen Z and Alpha issues and solutions/10. Split personality disorder in gen z,alpha.md",
-    "Towards Allah/Gen Z and Alpha issues and solutions/9. Delulu is Solulu.md",
-    "Towards Allah/Gen Z and Alpha issues and solutions/8. The biggest issue of the world.md",
-    "Towards Allah/Gen Z and Alpha issues and solutions/7. Conditioning process of brain.md",
     "Towards Allah/How to come out froms sins forever",
     "Towards Allah/What we have to do ?",
     "Towards Allah/Gen Z and Alpha issues and solutions",
-    "Towards Allah/Basics",
-    "Towards Allah"
+    "Towards Allah/Basics"
   ]
 }
