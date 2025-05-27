@@ -11,10 +11,14 @@
             "id": "458f688f825104cb",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Dua's/Duas.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Duas"
             }
           }
         ]
@@ -165,19 +169,25 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "3a38ca5ce716ca9c",
+  "active": "458f688f825104cb",
   "lastOpenFiles": [
+    "Dua's/Quotes.md",
+    "Dua's/prayers.md",
+    "Dua's/Duas.md",
+    "Dua's/Ayats.md",
+    "Towards Allah/Gen Z and Alpha issues and solutions/9. Delulu is Solulu.md",
+    "Towards Allah/Gen Z and Alpha issues and solutions/8. The biggest issue of the world.md",
+    "Towards Allah/Gen Z and Alpha issues and solutions/7. Conditioning process of brain.md",
+    "Towards Allah/Gen Z and Alpha issues and solutions/6. We are all becoming increasingly agnostic to ourselves.md",
     " how-computers-actually-works-behind-the-scenes.md",
     "how.md",
     "slug: how-computers-actually-works-behind-the-scenes.md",
-    "Dua's/Duas.md",
     "How Computers Actually works behind the scenes.md",
     "My self",
     "generator.md",
     "Map.md",
     "muhibarshad.md",
     "Dua's/dua_01.md",
-    "Dua's/prayers.md",
     "Dua's/manzil.md",
     "Towards Allah/Basics/1. Fastest Evidences to GOD exists.md",
     "Dua's/Dua_kadha/IMG_20250124_131432.jpg",
@@ -204,12 +214,6 @@
     "Towards Allah/Basics/2. Who are you ?.md",
     "Towards Allah/Basics/3. We all have knowledge, not belief..md",
     "Towards Allah/What we have to do ?/26. Conclusion.md",
-    "Towards Allah/What we have to do ?/25. Goals.md",
-    "Towards Allah/What we have to do ?/24. Prayer.md",
-    "Towards Allah/What we have to do ?/23. Biggest Injustice.md",
-    "Towards Allah/What we have to do ?/22. How to revive Ummah.md",
-    "Towards Allah/What we have to do ?/21. How to select effect spouse ?.md",
-    "Towards Allah/How to come out froms sins forever/20. UnCondiotional Pure True Love.md",
     "Towards Allah/How to come out froms sins forever",
     "Towards Allah/What we have to do ?",
     "Towards Allah/Gen Z and Alpha issues and solutions"

@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # Define the path to the folder containing the images
-folder="Dua's/Dua_kadha"
+folder="static/images/quotes"
 
 # Define the output file
-output="Dua's/dua_01.md"
+output="_notes/muhibarshad/Dua's/Quotes.md"
 
 # Make sure the directory exists
 if [ ! -d "$folder" ]; then
