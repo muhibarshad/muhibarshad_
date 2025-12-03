@@ -1,0 +1,6 @@
+- Daily learn hadith and status
+- Daily Quranly  
+- Write daily about the Eman 
+- Meet with any one of your friend in the friend List daily and meet with him and guide him towards the Allah Almighty and make connections 
+- Daily Taleem
+- Monthly Sah-roza

@@ -1,0 +1,49 @@
+.NET Prepration Areas:
+1. Explain ASP .NET Web Forms Application's Life Cycle. (Page level events such as Page_Load, init, preinit, etc...)
+2. What is an n-tier architectire? How is it different from MVC?
+3. Explain the responsibility of each layer in n-tier architecture (Presentation Layer/Business Logic Layer/Data Access Layer)
+
+OOP Prepration Areas:
+1. Define polymorphism? How many types of polymorphism do you know? (Static:Compile-time polymorphism-Overloading/Dynamic:Run-time polymorphism-Overriding)
+2. What's the difference between Abstraction and Encapsulation?
+3. What's multiple inheritance? What is the diamond problem? Explain... How to fix the diamond problem?
+4. Have you ever used OOP in real life programming experience? Explain by example. Moreover, explain which/where/how "OOP Concepts" have you used.
+5. Let's create a Class Diagram of (some) problem.
+
+Design Patterns Prepration Areas:
+1. What is Singleton pattern?
+2. What is Factory Pattern?
+3. What is Facade?
+
+Data Structure Prepration Areas:
+1. What's your favourite Data Structure? Why? (Mine is Hash :P )
+2. What are the time complexity of... (Queue, LinkedList, Stack, etc)... How?
+
+Algorithm Prepration Areas:
+1. Reverse an array in O(n)
+2. Find the midpoint of a singly linkedlist in O(n)
+3. Is this linkedlist/array/string a palindrome? find in O(n)
+4. Traverse the tree in Breadth First/Depth First/In/Pre/Post Order.
+5. Which sort algorithm is your favourite? Let's implement Bubble/Insertion/Quick/Heap/Merge sort.
+
+Database/SQL Prepration Areas:
+1. Find the second highest in table(s)
+2. What is the difference between Query/Stored Procedure/Function(Scalar/Table Value)
+3. Explain Inner/Full Outer/Left/Right Joins.
+4. What is the difference between WHERE and HAVING keyword?
+5. What is the difference between IN and BETWEEN keyword?
+6. Why is UNION keyword used?
+7. What's an ERD? Let's create an ERD of (some) problem...
+
+Analytical Problems (This is just an example.)
+1. 	A room has
+	1 box on 1st day,
+	2 boxes on 2nd day,
+	4 boxes on 3rd day,
+	8 boxes on 4th day, and so on.
+	If the room is completely filled up on 10th day, then on which day was the room at half capacity?
+
+2. 	An UNEVEN ROPE(thick from some places and thin from other places) that burns in 1 hour, how will you know that 30 minutes have passed?
+	If you have TWO ROPES, can you burn them to tell when 15 minutes have passed by?
+
+etc...

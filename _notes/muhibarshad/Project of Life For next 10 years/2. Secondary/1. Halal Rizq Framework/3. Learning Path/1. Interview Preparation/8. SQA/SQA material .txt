@@ -1,0 +1,11 @@
+
+SQA Training Session recordings are available for the mentioned below points:
+
+1- SQA Basis (Manual testing)
+2- SQA Intermediate (Database testing + Api Testing)
+3- SQA Advance (Performance Testing)
+4- How to get interview calls, clear all qa interviews of good companies.
+
+All session recordings in detail are on thi given link.
+
+https://www.dropbox.com/sh/stoaqqneq671glb/AABAWfdZyi5M0f_6j2sef2wja?dl=0

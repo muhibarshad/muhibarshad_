@@ -1,0 +1,19 @@
+{
+  "fadeToggle": true,
+  "autoRefreshToggle": true,
+  "autoRefreshInterval": 60,
+  "renderDateIcon": true,
+  "renderProjectIcon": true,
+  "renderLabelsIcon": true,
+  "shouldWrapLinksInParens": true,
+  "addTaskButtonAddsPageLink": "content",
+  "taskCreationDefaultDueDate": "today",
+  "taskCreationDefaultProject": null,
+  "taskCreationDefaultLabels": [
+    {
+      "labelId": "2166367096",
+      "labelName": "read"
+    }
+  ],
+  "debugLogging": false
+}

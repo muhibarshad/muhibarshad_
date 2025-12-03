@@ -1,0 +1,65 @@
+16 apirl:9am-11am
+os:
+what was life before os and how people use computer before os?
+why on earth we need os?
+wht is demand pagging and page fault?
+what are advantage of multi processor?
+what is the purpose of kernal?
+whaat is differnce between premitive and non premtive process?give real senrio example too?
+whatt are real time systems?
+what is throught put?waiting time ? resposnse ttime? turn aroudn time?
+what is virtual memory and why do we need it?
+what is the objective of  multiporgramming?
+what is multi tasking ?
+what is time shaaring system? give real example too?
+wht is differnce between time sharing and miulti tasking?
+what is smp ?*
+17 apirl 
+What is a process and process table? What are different states of process?
+What is a Thread? What are the differences between process and thread?*
+What are the benefits of multithreaded programming?*
+What is deadlock? 
+What are the necessary conditions for deadlock?
+What is Virtual Memory? How is it implemented?
+What is Thrashing? and degree of multtiprogramming ? how does it work and explain the whole pheonemena?
+What is Belady’s Anomaly?who does itt work? expalin and give example to prove it?
+
+21apirl 5am:
+why do we need  scheduling?
+what are objective  of process scheduling algo?
+name differnt scheduling algo ?
+What is crictal Section Problem ?what is race condition?give example of race condition?
+What are the soultion of critical prblm?
+wht are synchronization tools?
+explain semaphore? and what are the types of the semaphore and write code of wait and singal ?
+ which one is better? binary or counting?
+explain mutex?
+Differences between mutex and semphore?explain bht phoemona with example ?
+adavnges of semphore and mutex which one is better ?
+........................................
+1) Kernal level threads and user level threads.
+2) Mapping of user level threads on kernal level threads.
+3) Difference between Process and threads.
+methods of handling deadlocks
+banker algo
+memory mangemnt techniques
+varible parition  allocations schemes
+pagging and segmentataion
+page replacement algo
+file system
+file directories
+file allocation methods
+Disk Schedulling
+disk Schelduling algo
+https://www.geeksforgeeks.org/last-minute-notes-operating-systems/?ref=lbp
+.....................................................
+The most basic difference between counting and binary semaphore is that:
+
+Binary semaphore cannot handle Bounded wait as its just a variable that hold binary value.
+ Counting semaphore It can handle bounded wait as it has converted a variable into a structure with a Queue.
+Strcuture implementation Binary semaphore: int s;
+
+Counting Semaphore: Struct S { int s; Queue q; }
+
+Using the counting semaphore now process once gained the CS(Critical Section) now 
+has to wait for the other to get the CS, so not a single process strave. Each process get a chance for CS

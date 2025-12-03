@@ -1,0 +1,26 @@
+https://www.linkedin.com/in/muhibarshad/
+
+https://github.com/muhibarshad
+
+https://protfolio-muhibarshad.vercel.app/
+
+https://muhibarshad-resume-1-0.tiiny.site
+
+
+36102-8617895-5
+
+Bachelor of software engineering
+
+University of the Punjab , (PUCIT, New Campus ) , Lahore 
+
+Full Stack Engineer | MERN | Next.js | AI Integrations
+
+Summary:
+
+Passionate Junior Software Engineer with hands-on experience in full-stack development using React, Next.js, Node.js, Express, and MongoDB. Skilled in building responsive web applications, enhancing UI/UX, integrating dashboards and charts, and developing AI-driven projects like a ChatGPT Rank Tracker. Experienced in collaborating with teams, solving real-world problems, and continuously learning new technologies. Currently seeking opportunities as an Associate Software Engineer or AI Intern to contribute to innovative projects and grow in a dynamic environment.
+
+I can transform problem statements into complete software solutions using my knowledge of databases, system design, MERN/Next.js, and I can seamlessly integrate AI/ML into modern web applications.
+
+What makes me stand out is my ability to quickly understand problems and switch tech stacks with ease. I’ve worked with MERN during my university years and easily shifted to Next.js and Nest.js. I love learning, thinking, solving, and writing code — and because I understand core system fundamentals, I can learn any technology the project demands. I adapt fast, pick up new tools quickly, and build practical, scalable solutions.
+
+VS Code, Postman, Git & GitHub, Redux Toolkit, Storybook, GitHub Actions, Docker, Netlify, WordPress, AWS, Vercel, OpenAI API, LangChain, Slack, Figma, Jira, Trello

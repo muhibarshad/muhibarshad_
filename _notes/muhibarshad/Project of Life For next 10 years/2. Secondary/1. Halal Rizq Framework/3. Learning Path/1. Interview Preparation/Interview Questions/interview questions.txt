@@ -1,0 +1,197 @@
+Interview 1
+- oop concepts (
+function override, overload
+Abstract vs interface
+Composition, Aggregation with code example
+Why oop
+Encapsulation vs abstraction with coding example
+Polymorphism
+Can base class points derive class)
+Garbage collector in java
+- coding
+Place all underscore at the end of string
+  Atif_shah_zaib
+ Output Atifshahzaib___
+- Add two linked list
+ 4->5->7
+5->4->5
+1->0->0->2
+- Print linked list in reverse
+
+Analytical
+- Water jug example 
+- 3 buckets of fruits , apple, mango , apple+mango..
+Every bucket is labeled wrong, you can check only 1 bucket and have to labeled them correctly
+-Blind person have to take a dose 1 red tablet + 1 blue in morn and even
+
+He has 4 tablets ( 2 red, 2 blue every thing is same except color) how will the person take dose..
+
+--------------
+Interview 2
+--------------
+- Same oop concepts
+- Design Patterns 
+- Stored procedure
+- 5 persons sat in round ,
+Each wear a cap with number
+1 2 3 4 5
+
+1 kills 2 and handover the knife to 3 then 3 kills 4 handover the knife to 5 ,5 kills 1 and handover the knife to 3 ,3 kills 5 , survivor is 3..
+Write a function for this situation
+
+------------
+Interview 3
+------------
+- explain yourself
+- where do you see yourself in next 5 years
+- why devsinc
+- what's your fyp
+- why this fyp?
+Code to find point of intersection of 2 linked lists.
+Program to print outer boundry of tree.
+Program to find whether number is even or odd without using relational operator.
+Store procedure, Triggers, query having group by clause
+Employee k existing table ma ap nay experience wala column add krna hai... To kya kya changes hon gi front end or back end pr,
+Implementation for flat function of python.Sum of all nodes of bst without loop.
+
+Arrange all zeros in right side in O(n)  without using any extra array like [1,0,2,3,0,4,0,3] shoud be like [1,3,2,3,4,0,0,0]
+
+What is B-tree, 2-3 tree, stored procedures, difference between abstract class and interface
+
+Erd bnany ka Lia di thi ek or usi Erd Pa likhny ka Lia 2 queries bas
+
+------------
+Oop basics:
+------------
+Abstraction 
+Encapsulation 
+Polymorphism 
+Inheritance 
+Data hiding
+Interfere class
+Access and non access modifiers 
+Overloading vs overriding
+
+--------------
+Above basics:
+--------------
+Diamond problem 
+Abstract vs interface class
+Class vs object
+Why need inheritance? 
+Why need polymorphism? 
+Static polymorphism vs dynamic polymorphism 
+Singleton class (private constructor, why need, how implemented)
+
+----------
+Database:
+----------
+Primary key, foreign key
+Normalization 
+Union and intersection
+Aggregation and composition (association)
+Er diagram
+Cardinality and modality
+How to convert from er diagram to schema (tables) 
+Generalization and specialization 
+Sql queries
+(Nested query, aggregate func etc)
+Use of join? 
+
+Some database names
+
+What is Oracle? 
+What is sql?
+What is mysql?
+What is nosql?
+What is sql lite?
+
+Indexing and types
+
+(Some query are:)
+1) how to find 2nd highest salary?
+2) find sum of salary of employees for each department having more than 2 employee
+
+Triggers 
+Store procedure 
+Functions 
+Views
+----------------------
+-----
+Dsa:
+-----
+Stack 
+Queue
+Vector
+Array
+Linked list
+(Singly, double, circular)
+Tree
+Binary tree
+Bst
+Avl
+Graphs
+Min and max heap 
+Priority queue
+Hash map
+Hashing
+Hash function
+Hash table
+Bfs
+Dfs
+Dijsktra
+Bellmen ford
+Knapsack
+Minimun spanning tree
+Shortest path algos
+Etc
+-------------------
+Adv:(if have time)
+-------------------
+Greedy algo
+Dynamic programming
+
+Some Questions:
+Complexity  (time and space)  of loops, recursion
+
+Best worst and avg complexity of:
+Sorting algo (merge sort, quick sort, bubble sort etc)
+Search algo
+Hash table
+
+1) reverse singly linked list
+2) in singly list list you are at any middle node, delete that node in O (1). Hint: you can't go on previous node but you can go forward.
+3) find height of tree
+4) write dijisktra algo
+5) find Kth largest element in an array in O(n) 
+6) find middle node in singley linked list in single loop
+7) complexity of singly, double linked list for insert, delete, search, 
+8) complexity of trees, bst, min max heap to insert, delete and search 
+9) complexity of dijisktra, bfs, dfs
+10) is dijisktra greedy or not?
+
+These are some basic concepts of OOP, DSA and DB that are mandatory to revise before any interview.
+
+---------------
+3rd interview 
+---------------
+Why devsinc
+Where do you see yourself in next 5 years
+Describe yourself
+What's your fyp
+Why this fyp
+What's your role in this fyp
+-------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------
+ Wht is struct
+Diff between struct and class
+Wht us mode , median 
+Writr code to find mode in array , without using sort or couting algo
+White code to find intersection between 3 arrays
+Wht is head
+Wht is curent
+Write code to find mid of singly list 
+Write code to delte node from end of array, if user enter 2 , u will delete 2nd last node, u only have one travsel, u dnt know the length of list too,
+In24 hours
+How many times in clock does hour and minute arm intersect

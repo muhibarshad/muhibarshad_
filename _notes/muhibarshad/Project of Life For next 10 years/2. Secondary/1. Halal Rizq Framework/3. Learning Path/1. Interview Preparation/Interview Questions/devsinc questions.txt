@@ -1,0 +1,31 @@
+First Interview:
+     FYP
+     semester projects(CV)
+     Inheritance
+     Polymorphism
+     Class vs object
+     diff bt hiding and abstraction
+     types of DSA
+
+ run these codes on online editor:
+     factorial using recursion
+     palindrome all methods and solve using optimized method
+     tree traversal(a diagram was given)
+     
+
+2nd interview:
+  
+   Class vs struct
+   why normalization
+   advantages of normalization
+   what is indexing and disadvantages
+   which sorting algorithm is best suited for integers array
+
+  run these codes on online editor:
+     Find 2nd max of array in O(n)
+     A diagram having 4 tables was given(2 DB queries related to them)
+
+
+
+
+

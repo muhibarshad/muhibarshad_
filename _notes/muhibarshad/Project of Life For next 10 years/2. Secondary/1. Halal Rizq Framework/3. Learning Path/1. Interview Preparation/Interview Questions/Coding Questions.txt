@@ -1,0 +1,29 @@
+
+1Reverse the singly link list //
+2write funct to tell it is Angram string or not. //
+3Mirror the Binary tree. //
+4Remove mid node of singly link list, you have only acces to mid node... No acces to root or end node. //
+5 Find all combinations in array whose sum = given number. ///////// with vector rehta hai
+6Find Rotating substring in other string // java + cpp
+7Most repeative number in a array In O(n) //
+8Place zeroes to last indexes in array. //
+9Find distance between 2 nodes of BST. 	 //
+10find palindrom in singly list  //
+11write query to find out 3rd max salary //
+12Given an integer array, e.g 1,2,3,5,7,9,.. and a number n.
+13Find all such combinations of the numbers from the array such that their sum is equal to n? //////////
+14find the intersection of 2 singly linked lists in O(n)
+15Find all possible combinations of an array //
+16delete Nth last node from linked list //
+17find if linked lists intersect or not.
+18bst insertion
+19bst inorder traversal
+20a number is even or odd without using any condition
+
+
+21remove loop //
+
+22permutation variables in array //
+23mapping array 2D 3D //
+
+24fibonacci, palindrom, flat array, pairs of array, reverse an array

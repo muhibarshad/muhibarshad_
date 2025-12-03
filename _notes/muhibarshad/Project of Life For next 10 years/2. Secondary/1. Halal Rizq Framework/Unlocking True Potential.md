@@ -1,0 +1,10 @@
+- Like do it fully focused and use GPT two sided prompts technique and clear the basics 
+- Don't be hurry
+- Learn Slowly but grab it deeply
+- Leave all the time , thoughts and next things 
+- Focus on what you learning not what i will achieve when i will learn it 
+- Focus and learn in a teaching way like you teaching someone and write the points you get from it or save it in a gpt chat 
+- Talk in a english and like more thinking way 
+- don't take stress of people know but i don't know but most of the people dont know 
+- so your focus and attachment and understanding and clarification of every question coming to your mind through the gpt will make you hack that concepts otherwise they will always lead you towards the fog and you don't know anything in the end 
+- learn less , learn strong , make mind power to learn , explain , connect points , visualize solve problems and get the analytical mind and contribute in the world 

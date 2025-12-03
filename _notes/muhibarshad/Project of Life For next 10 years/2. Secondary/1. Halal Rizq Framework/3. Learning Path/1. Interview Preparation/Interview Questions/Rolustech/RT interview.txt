@@ -1,0 +1,26 @@
+-> Why CS?
+-> In which subject you are most interested in?
+-> Post vs Get. When we use post and when we use get?
+-> AJAX?
+-> Request states?
+-> Web Services?
+-> Rest vs Soap
+-> Json vs XML. Which one is lightweight?
+DB:
+-> Stored Procedures?
+-> Left outer join
+->Self join
+Coding:
+-> Pre-order traversal code
+-> Delete a node from double linked list
+
+-> There are eight 8s and we can use +, - , * , / between them to make 1000.
+-> Search an element from N-D array
+-> Sessions vs cookies
+
+->Polymorphism. Why is there a need of polymorphism?
+->Is polymorphism possible without objects?
+->Desktop apps vs web apps
+->Does assembly language has data types?
+->What is the effect of datatypes?
+->Dangling pointer vs memory leakage

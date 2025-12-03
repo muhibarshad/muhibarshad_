@@ -1,0 +1,67 @@
+linked list reveresd
+
+while(currNode!=null){
+     nextNode = currNode.next;
+     currNode.next = prevNode;
+     prevNode = currNode;
+     currNode = nextNode;
+}
+
+linklist mid
+ while(current.next() != null){
+          current = current.next();
+          middle = middle.next();
+          if(current.next() != null){
+              current = current.next();
+          }
+      }
+
+DSA FAQ
+http://career.guru99.com/top-50-data-structure-interview-questions/
+http://www.indiabix.com/technical/data-structures/3
+https://www.tutorialspoint.com/data_structures_algorithms/data_structures_algorithms_interview_questions.htm
+
+https://www.quora.com/What-is-a-framework-in-programming
+http://stackoverflow.com/questions/3085285/cohesion-coupling
+http://bigocheatsheet.com/
+https://stackoverflow.com/questions/138273/what-are-hashtables-and-hashmaps-and-their-typical-use-cases
+
+
+Worst case complexity of bst
+Static non static k saray concept
+Destructor constructor calling herrarchy in multilevel inheritance
+Complexity of skew tree
+Worst case complexity of left skew tree and right skew tree
+
+
+SELECT Max(Price)
+FROM Products
+where Price Not IN (Select price from Products order by Price Desc limit(4))
+
+bool isPalindrom(int n) {
+  int original = n;
+  int mirror = 0;
+  while (n) {
+    mirror = mirror * 10 + n % 10;
+    n /= 10;
+  }
+  return mirror == original;
+}
+https://stackoverflow.com/questions/860339/difference-between-private-public-and-protected-inheritance
+https://stackoverflow.com/questions/4772780/explain-this-snippet-which-finds-the-maximum-of-two-integers-without-using-if-el
+http://www.mathcs.emory.edu/~cheung/Courses/171/Syllabus/9-BinTree/heap-delete.html
+https://www.quora.com/How-can-I-find-the-maximum-of-two-numbers-without-using-if-else-or-any-other-comparison-operator
+http://www.techiedelight.com/inorder-tree-traversal-iterative-recursive/
+https://stackoverflow.com/questions/4366251/mirror-image-of-a-binary-tree
+http://www.geeksforgeeks.org/write-c-code-to-determine-if-two-trees-are-identical/
+https://stackoverflow.com/questions/3589716/level-order-traversal-of-a-binary-tree
+https://www.toptal.com/sql/interview-questions
+http://www.programmerinterview.com/index.php/data-structures/difference-between-stack-and-heap/
+https://www.allinterview.com/showanswers/258/what-is-difference-between-thread-and-process.html
+https://gabrieletolomei.wordpress.com/miscellanea/operating-systems/multiprogramming-multiprocessing-multitasking-multithreading/
+https://www.geeksforgeeks.org/singleton-design-pattern/
+https://techiedelight.quora.com/500-Data-Structures-and-Algorithms-practice-problems-and-their-solutions
+https://stackoverflow.com/questions/600293/how-to-check-if-a-number-is-a-power-of-2
+https://www.w3resource.com/sql-exercises/sql-joins-exercises.php
+https://www.techonthenet.com/sql/joins.php
+

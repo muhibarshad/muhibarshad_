@@ -1,0 +1,1 @@
+Firstly do the Halal Rizq , health and make connection with Allah .
