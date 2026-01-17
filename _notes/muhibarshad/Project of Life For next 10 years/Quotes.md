@@ -1,1 +1,0 @@
-- Only way to get up is the "Himmat" as for work we do effort for dunyia if we wants or not same for akhirah if we want or not we have to do it. 

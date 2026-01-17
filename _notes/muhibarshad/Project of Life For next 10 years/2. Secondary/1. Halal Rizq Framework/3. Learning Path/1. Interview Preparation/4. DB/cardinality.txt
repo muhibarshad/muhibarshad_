@@ -1,1 +1,0 @@
-https://stackoverflow.com/questions/10621077/what-is-cardinality-in-databases

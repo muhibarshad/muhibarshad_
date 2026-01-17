@@ -1,5 +1,0 @@
-- Always Recite Morning and Evening Dua's
-- Always Recite the sunnah Dua's of every situation for it in a week learn one new Dua and whole week implement on it 
-- Daily 2 Rakat of namaz with intention of tawabh , gratefulness,  needy, help and then pray all duas you know like from Quran , masnoon duas , manzil , your website , morning evening prayers mean all you know, then also ask duas that you need specially give more time to Dua 
-- If find time then start manzil recite daily manzil Dua from Hizbul Azam
-- Also recite Dalailul kahriat  

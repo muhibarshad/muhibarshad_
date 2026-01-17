@@ -1,2 +1,0 @@
-- Start writing form the start 
-- Daily write the things you learn from teachers and like the Full complete Dawah to the Muslims from the purpose of life to how to live life  
