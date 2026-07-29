@@ -1,53 +1,125 @@
-import React from 'react'
-import { graphql, useStaticQuery, Link } from 'gatsby'
+import React, { useMemo } from 'react'
+import { graphql, useStaticQuery, Link, navigate } from 'gatsby'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
+import Graph from 'react-graph-vis'
 import Layout from '../layout/layout'
 import siteConfig from '../../gatsby-config'
 import NoteList from '../components/note-list'
 import Search from '../components/search'
 import '../styles/index.css'
+import '../styles/graph.css'
 import { DefaultMenuStructure, MenuRoot } from '../utils/menu-structure'
+const _ = require('lodash')
+
+function findReferences(content) {
+  if (!content) return []
+  const linkRegex = /\[\[([^\]\|]+)(\|.+)?\]\]/g
+  const links = [...content.matchAll(linkRegex)]
+  const matchedNotes = links.map(lnk => lnk[1])
+  return _.uniqWith(matchedNotes, (a, b) => a.toLowerCase() === b.toLowerCase())
+}
+
+function getPreExistingTitle(title, allNoteTitles) {
+  const key = Object.keys(allNoteTitles).find(k => k.toLowerCase() === title.toLowerCase())
+  return key || title
+}
 
 export default function Home() {
   const data = useStaticQuery(graphql`
     query HomeQuery {
       homeNote: mdx(frontmatter: {slug: {eq: "home"}}) {
         body
-        fields {
-          title
-          date
-        }
-        frontmatter {
-          tags
-        }
+        fields { title date }
+        frontmatter { tags }
       }
       notes: allMdx(
         filter: { fields: { visibility: { eq: "public" } } }
-        limit: 5
         sort: { fields: fields___date, order: DESC }
       ) {
         edges {
           node {
             excerpt
-            fields {
-              slug
-              title
-              date
-            }
-            frontmatter {
-              tags
-            }
+            rawBody
+            fields { slug title date }
+            frontmatter { tags }
           }
         }
       }
     }
   `)
 
+  // Extract recent 5 notes
+  const recentNotes = data.notes.edges.slice(0, 5)
+
+  // Memoize graph generation to prevent re-renders
+  const { graph, graphOptions, events } = useMemo(() => {
+    let refersTo = {}
+    let allNoteTitles = {}
+    
+    // Map existing titles for case-insensitive lookup
+    data.notes.edges.forEach(({ node }) => {
+      allNoteTitles[node.fields.title] = node
+    })
+
+    // Build references
+    data.notes.edges.forEach(({ node }) => {
+      const title = node.fields.title
+      const outgoingLinks = findReferences(node.rawBody)
+      refersTo[title] = outgoingLinks.map(outTitle => getPreExistingTitle(outTitle, allNoteTitles))
+    })
+
+    const g = {
+      nodes: Object.keys(refersTo).map((title) => ({ id: title, label: title })),
+      edges: []
+    }
+
+    Object.keys(refersTo).forEach(noteTitle => {
+      const refNoteTitles = refersTo[noteTitle]
+      refNoteTitles.forEach(refNoteTitle => {
+        if (allNoteTitles[refNoteTitle]) {
+          g.edges.push({ from: noteTitle, to: refNoteTitle })
+        }
+      })
+    })
+
+    const options = {
+      nodes: {
+        shape: "dot",
+        size: 8,
+        font: { color: "#888" },
+        color: {
+          border: "#aaa",
+          background: "#aaa",
+          highlight: { border: "#666", background: "#888" }
+        }
+      },
+      edges: {
+        color: { border: "#ddd" },
+        arrows: "middle",
+      },
+      height: "400px"
+    }
+
+    const evts = {
+      select: function(event) {
+        const { nodes } = event
+        if (!nodes || nodes.length === 0) return
+        const nodeId = nodes[0].toLowerCase()
+        const targetNode = data.notes.edges.find(obj => obj.node.fields.title.toLowerCase() === nodeId)
+        if (targetNode) {
+          navigate(targetNode.node.fields.slug)
+        }
+      }
+    }
+
+    return { graph: g, graphOptions: options, events: evts }
+  }, [data.notes.edges])
+
   let tagList = DefaultMenuStructure('tag-list')
   tagList.push({
     type:'page',
     item:'tags',
-    title: 'All Tags →',
+    title: 'All Tags',
     liClassName: 'pill'
   })
 
@@ -65,120 +137,54 @@ export default function Home() {
   ) : (
     <Layout title="Home" type="home">
       <div className="column is-half">
-        {/* Hero Section */}
-        <div style={{
-          padding: '2.5rem 0 1.5rem 0',
-          animation: 'fadeInUp 0.6s ease-out',
-        }}>
-          <div style={{
-            display: 'inline-flex',
-            alignItems: 'center',
-            gap: '8px',
-            background: 'var(--tag-bg)',
-            border: '1px solid var(--tag-border)',
-            borderRadius: '9999px',
-            padding: '6px 16px',
-            marginBottom: '16px',
-            fontSize: '0.85rem',
-            color: 'var(--tag-text)',
-            fontWeight: 500,
-          }}>
-            <span role="img" aria-label="sparkles">✨</span>
-            Digital Garden
-          </div>
-          
-          <h1 style={{
-            fontSize: 'clamp(2rem, 5vw, 3rem)',
-            fontWeight: 800,
-            letterSpacing: '-0.04em',
-            lineHeight: 1.1,
-            marginBottom: '1rem',
-            background: 'var(--accent-gradient)',
-            WebkitBackgroundClip: 'text',
-            WebkitTextFillColor: 'transparent',
-            backgroundClip: 'text',
-          }}>
+        
+        {/* Intro */}
+        <div style={{ padding: '2rem 0 1rem 0' }}>
+          <h1 style={{ marginBottom: '1rem' }}>
             {siteConfig.siteMetadata.title}
           </h1>
-          
-          <p className="lead" style={{
-            fontSize: '1.1rem',
-            lineHeight: 1.7,
-            color: 'var(--text-sub)',
-            maxWidth: '580px',
-            marginBottom: '1.5rem',
-          }}>
+          <p className="lead" style={{ maxWidth: '600px' }}>
             {siteConfig.siteMetadata.description}
           </p>
         </div>
 
-        {/* Tags */}
-        <div className="block tag-list" style={{
-          animation: 'fadeInUp 0.7s ease-out',
-        }}>
-          <MenuRoot menu={tagList} />
-        </div>
-
         {/* Search */}
-        <div className="block" style={{
-          animation: 'fadeInUp 0.8s ease-out',
-        }}>
+        <div className="block mt-4">
           <Search size="medium" showExcerpt={true} />
         </div>
 
-        {/* Recent Notes */}
-        <div className="block" style={{
-          animation: 'fadeInUp 0.9s ease-out',
-          marginTop: '2rem',
-        }}>
-          <h3 style={{
-            fontSize: '1.1rem',
-            fontWeight: 700,
-            color: 'var(--text-main)',
-            marginBottom: '1rem',
-            display: 'flex',
-            alignItems: 'center',
-            gap: '8px',
-          }}>
-            <span role="img" aria-label="notebook">📝</span>
-            Recent Notes
+        {/* Tags */}
+        <div className="block tag-list mt-4">
+          <h3 style={{ marginBottom: '1rem', borderBottom: '1px solid var(--border)', paddingBottom: '0.5rem' }}>
+            Topics
           </h3>
-          <NoteList notes={data.notes.edges} />
+          <MenuRoot menu={tagList} />
         </div>
 
-        <div style={{
-          marginTop: '1.5rem',
-          animation: 'fadeInUp 1s ease-out',
-        }}>
-          <Link 
-            to="/sitemap"
-            style={{
-              display: 'inline-flex',
-              alignItems: 'center',
-              gap: '6px',
-              padding: '10px 20px',
-              background: 'var(--accent-gradient)',
-              color: '#fff',
-              borderRadius: '10px',
-              fontWeight: 600,
-              fontSize: '0.9rem',
-              textDecoration: 'none',
-              transition: 'all 0.25s cubic-bezier(0.4, 0, 0.2, 1)',
-              boxShadow: '0 4px 12px rgba(99,102,241,0.25)',
-            }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.transform = 'translateY(-2px)'
-              e.currentTarget.style.boxShadow = '0 8px 24px rgba(99,102,241,0.35)'
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.transform = 'translateY(0)'
-              e.currentTarget.style.boxShadow = '0 4px 12px rgba(99,102,241,0.25)'
-            }}
-          >
-            Browse All Notes
-            <span>→</span>
+        {/* Recent Notes */}
+        <div className="block mt-4">
+          <h3 style={{ marginBottom: '1rem', borderBottom: '1px solid var(--border)', paddingBottom: '0.5rem' }}>
+            Recent Notes
+          </h3>
+          <NoteList notes={recentNotes} />
+        </div>
+
+        <div style={{ marginTop: '2rem', marginBottom: '3rem' }}>
+          <Link to="/sitemap" style={{ fontWeight: 600 }}>
+            View All Notes →
           </Link>
         </div>
+
+        {/* Global Knowledge Map */}
+        <div className="block mt-4">
+          <h3 style={{ marginBottom: '1rem', borderBottom: '1px solid var(--border)', paddingBottom: '0.5rem' }}>
+            Knowledge Map
+          </h3>
+          <div id="graph-container" style={{ borderRadius: '8px', overflow: 'hidden' }}>
+            <Graph graph={graph} options={graphOptions} events={events} />
+          </div>
+        </div>
+
       </div>
     </Layout>
   )

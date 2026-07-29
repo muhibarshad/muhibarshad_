@@ -5,7 +5,7 @@ module.exports = {
 
   siteMetadata: {
     title: `muhibarshad-doc`,
-    description: `Hi there, Muhib Arshad – Software Engineer & Full Stack Developer (PUCIT '25). Passionate about web development, Islamic scholarship, and self-discovery. On a journey to follow the Sunnah while exploring life’s deeper truths. `,
+    description: `Hi there, Muhib Arshad – Full Stack AI Engineer. Building AI agents, model training & fine-tuning, world-class prompt/graph engineering, and fully automated custom AI solutions. On a journey to follow the Sunnah while exploring life’s deeper truths. `,
 
     siteUrl: `https://muhibarshad-doc.netlify.app/`,
     headerMenu: [

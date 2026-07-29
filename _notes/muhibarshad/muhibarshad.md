@@ -6,8 +6,8 @@ slug: 'muhibarshad'
 date: 2025-05-10 04:05:00
 ---
 
-- **Occupation**: Software Engineer, PUCIT'25
-- **Role**: Full Stack Developer, Exploring the World of Web Development
+- **Occupation**: Full Stack AI Engineer, PUCIT'25
+- **Role**: Building AI Agents, Model Fine-Tuning, World-Class Prompt Engineering & Automated AI Solutions
 - **GitHub**: [muhibarshad](https://github.com/muhibarshad)
 - **LinkedIn**: [muhibarshad](https://www.linkedin.com/in/muhibarshad)
 
