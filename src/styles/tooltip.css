@@ -1,7 +1,27 @@
+/* ═══════════════════════════════════════════════════════════════
+   TIPPY — Modern Tooltip Override
+   ═══════════════════════════════════════════════════════════════ */
+
 .tippy-box {
-	background-color: var(--bg-sub);
-	color: var(--text-sub);
+	background-color: var(--bg-card, var(--bg-sub));
+	color: var(--text-main);
 	border: 1px solid var(--border);
+	border-radius: 12px;
 	height: 200px;
 	overflow-y: auto;
+	box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+	font-size: 0.9rem;
+	padding: 6px;
+}
+
+.tippy-box .tippy-content {
+	padding: 8px 12px;
+}
+
+.tippy-box[data-placement^='top'] > .tippy-arrow::before {
+	border-top-color: var(--bg-card, var(--bg-sub));
+}
+
+.tippy-box[data-placement^='bottom'] > .tippy-arrow::before {
+	border-bottom-color: var(--bg-card, var(--bg-sub));
 }

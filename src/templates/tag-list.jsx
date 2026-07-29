@@ -12,14 +12,35 @@ export default function TagList({ data }) {
 
   return (
     <Layout title="All Tags" type="tag">
-      <div className="column is-half">
-        <h1>All Tags</h1>
+      <div className="column is-three-fifths">
+        <div style={{
+            padding: '2rem 0',
+            borderBottom: '1px solid var(--border)',
+            marginBottom: '2rem',
+            animation: 'fadeInUp 0.5s ease-out'
+        }}>
+            <h1 style={{ marginBottom: '0.5rem', fontWeight: 800 }}>
+                <span role="img" aria-label="tags">🏷️</span> Topics & Tags
+            </h1>
+            <p className="lead" style={{ color: 'var(--text-sub)' }}>
+                Explore notes organized by categories and interests.
+            </p>
+        </div>
 
-        <ul>
-          {tagList.map(tag => (
-            <li key={tag.fieldValue} className="tag-name">
+        <ul style={{
+            display: 'flex',
+            flexWrap: 'wrap',
+            gap: '8px',
+            padding: 0,
+            animation: 'fadeInUp 0.6s ease-out'
+        }}>
+          {tagList.map((tag, index) => (
+            <li key={tag.fieldValue} className="tag-name" style={{
+                animationDelay: `${index * 0.05}s`,
+                animationFillMode: 'both'
+            }}>
               <Link to={`/tags/${kebabCase(tag.fieldValue)}/`}>
-                {tag.fieldValue} <span className="badge">{tag.totalCount}</span>
+                #{tag.fieldValue} <span className="badge">{tag.totalCount}</span>
               </Link>
             </li>
           ))}

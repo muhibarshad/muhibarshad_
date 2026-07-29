@@ -1,15 +1,30 @@
+/* ═══════════════════════════════════════════════════════════════
+   COMMENTS SECTION — Modern Discussion
+   ═══════════════════════════════════════════════════════════════ */
+
 .comments-section {
   margin: 3rem 0;
   padding-top: 2rem;
-  border-top: 1px solid var(--border-color);
+  border-top: 1px solid var(--border);
 }
 
 .comments-section .block-title {
   margin-bottom: 1.5rem;
   font-size: 1.25rem;
   color: var(--text-main);
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.comments-section .block-title::before {
+  content: "💬";
+  font-size: 1.1em;
 }
 
 .giscus-comments {
   margin-top: 1rem;
+  border-radius: 12px;
+  overflow: hidden;
 }

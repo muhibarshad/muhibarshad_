@@ -44,10 +44,10 @@ export default function Home() {
   `)
 
   let tagList = DefaultMenuStructure('tag-list')
-  tagList.push({ // Add a link to a page that shows all tags.
+  tagList.push({
     type:'page',
     item:'tags',
-    title: '...',
+    title: 'All Tags →',
     liClassName: 'pill'
   })
 
@@ -65,25 +65,120 @@ export default function Home() {
   ) : (
     <Layout title="Home" type="home">
       <div className="column is-half">
-        <div className="block">
-          <h1>{siteConfig.siteMetadata.title}</h1>
-          <p className="lead">{siteConfig.siteMetadata.description}</p>
+        {/* Hero Section */}
+        <div style={{
+          padding: '2.5rem 0 1.5rem 0',
+          animation: 'fadeInUp 0.6s ease-out',
+        }}>
+          <div style={{
+            display: 'inline-flex',
+            alignItems: 'center',
+            gap: '8px',
+            background: 'var(--tag-bg)',
+            border: '1px solid var(--tag-border)',
+            borderRadius: '9999px',
+            padding: '6px 16px',
+            marginBottom: '16px',
+            fontSize: '0.85rem',
+            color: 'var(--tag-text)',
+            fontWeight: 500,
+          }}>
+            <span role="img" aria-label="sparkles">✨</span>
+            Digital Garden
+          </div>
+          
+          <h1 style={{
+            fontSize: 'clamp(2rem, 5vw, 3rem)',
+            fontWeight: 800,
+            letterSpacing: '-0.04em',
+            lineHeight: 1.1,
+            marginBottom: '1rem',
+            background: 'var(--accent-gradient)',
+            WebkitBackgroundClip: 'text',
+            WebkitTextFillColor: 'transparent',
+            backgroundClip: 'text',
+          }}>
+            {siteConfig.siteMetadata.title}
+          </h1>
+          
+          <p className="lead" style={{
+            fontSize: '1.1rem',
+            lineHeight: 1.7,
+            color: 'var(--text-sub)',
+            maxWidth: '580px',
+            marginBottom: '1.5rem',
+          }}>
+            {siteConfig.siteMetadata.description}
+          </p>
         </div>
 
-        <div className="block tag-list">
+        {/* Tags */}
+        <div className="block tag-list" style={{
+          animation: 'fadeInUp 0.7s ease-out',
+        }}>
           <MenuRoot menu={tagList} />
         </div>
 
-        <div className="block">
+        {/* Search */}
+        <div className="block" style={{
+          animation: 'fadeInUp 0.8s ease-out',
+        }}>
           <Search size="medium" showExcerpt={true} />
         </div>
 
-        <div className="block">
+        {/* Recent Notes */}
+        <div className="block" style={{
+          animation: 'fadeInUp 0.9s ease-out',
+          marginTop: '2rem',
+        }}>
+          <h3 style={{
+            fontSize: '1.1rem',
+            fontWeight: 700,
+            color: 'var(--text-main)',
+            marginBottom: '1rem',
+            display: 'flex',
+            alignItems: 'center',
+            gap: '8px',
+          }}>
+            <span role="img" aria-label="notebook">📝</span>
+            Recent Notes
+          </h3>
           <NoteList notes={data.notes.edges} />
         </div>
 
-        <br />
-        <Link to="/sitemap">All Notes...</Link>
+        <div style={{
+          marginTop: '1.5rem',
+          animation: 'fadeInUp 1s ease-out',
+        }}>
+          <Link 
+            to="/sitemap"
+            style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '6px',
+              padding: '10px 20px',
+              background: 'var(--accent-gradient)',
+              color: '#fff',
+              borderRadius: '10px',
+              fontWeight: 600,
+              fontSize: '0.9rem',
+              textDecoration: 'none',
+              transition: 'all 0.25s cubic-bezier(0.4, 0, 0.2, 1)',
+              boxShadow: '0 4px 12px rgba(99,102,241,0.25)',
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = 'translateY(-2px)'
+              e.currentTarget.style.boxShadow = '0 8px 24px rgba(99,102,241,0.35)'
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = 'translateY(0)'
+              e.currentTarget.style.boxShadow = '0 4px 12px rgba(99,102,241,0.25)'
+            }}
+          >
+            Browse All Notes
+            <span>→</span>
+          </Link>
+        </div>
       </div>
     </Layout>
   )

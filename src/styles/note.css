@@ -1,10 +1,30 @@
 @import "variables.css";
 
+/* ═══════════════════════════════════════════════════════════════
+   NOTE PAGE — Premium Reading Experience
+   ═══════════════════════════════════════════════════════════════ */
+
+.note-area {
+  animation: fadeInUp 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
 .note-area .note-title {
-  margin: 0 5px;
-  padding: 0 5px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  padding-bottom: 0.25em;
 }
 
 .note-tags h6,
@@ -12,101 +32,274 @@
 .note-tags li {
   display: inline;
 }
+
 .note-tags ul {
   padding: 0;
 }
+
 .note-area .note-tags li::after {
-  content: ", ";
+  content: "";
 }
+
 .note-area .note-tags li:last-child:after {
   content: "";
 }
 
+.note-area .note-tags li {
+  display: inline-block;
+}
+
+.note-area .note-tags li a {
+  background: var(--tag-bg);
+  color: var(--tag-text);
+  border: 1px solid var(--tag-border);
+  padding: 3px 12px;
+  border-radius: 9999px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  display: inline-block;
+  margin: 2px;
+  text-decoration: none;
+}
+
+.note-area .note-tags li a:hover {
+  background: var(--accent-primary);
+  color: #fff;
+  border-color: var(--accent-primary);
+  transform: translateY(-1px);
+}
+
+
+/* ── Note Content ───────────────────────────────────────────── */
 .note-references,
 .note-tags,
 .note-graph,
 .note-meta,
 .note-content {
-  margin: 10px;
+  margin: 16px 0;
+}
+
+.note-content {
+  font-size: 1rem;
+  line-height: 1.85;
+  color: var(--text-main);
 }
 
 .note-content img {
   max-width: 100% !important;
+  border-radius: 12px;
+  margin: 1rem 0;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.note-content img:hover {
+  transform: scale(1.01);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+}
+
 .note-content a {
   color: var(--link) !important;
+  text-decoration: none;
+  border-bottom: 1px dashed var(--tag-border);
+  transition: all 0.2s ease;
 }
+
+.note-content a:hover {
+  border-bottom-color: var(--link);
+  border-bottom-style: solid;
+}
+
 .note-content table {
   width: 100%;
-  border-top: 1px solid var(--bg-sub);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
   margin: 20px 0;
+  border-collapse: separate;
+  border-spacing: 0;
 }
+
 .note-content table tr {
-  border-bottom: 1px solid var(--bg-sub);
+  border-bottom: 1px solid var(--border);
+  transition: background-color 0.2s ease;
 }
+
+.note-content table tr:hover {
+  background-color: var(--tag-bg);
+}
+
 .note-content table td,
 .note-content table th {
-  padding: 5px;
+  padding: 10px 14px;
 }
 
 .note-content blockquote {
-  background: var(--bg-sub);
-  border-left: 10px solid var(--border);
-  margin: 1.5em 10px;
-  padding: 0.5em 10px;
-  quotes: "\201C""\201D""\2018""\2019";
-}
-.note-content blockquote::before {
-  color: var(--border);
-  content: open-quote;
-  font-size: 4em;
-  line-height: 0.1em;
-  margin-right: 0.25em;
-  vertical-align: -0.4em;
-}
-.note-content blockquote p {
-  display: inline;
-}
-.note-content code {
-  color: var(--text-sub);
+  background: var(--accent-gradient-subtle, var(--bg-sub));
+  border-left: 4px solid var(--accent-primary);
+  margin: 1.5em 0;
+  padding: 16px 20px;
+  border-radius: 0 12px 12px 0;
+  position: relative;
 }
 
-.note-list .note-area {
-  padding: 10px;
+.note-content blockquote::before {
+  color: var(--accent-primary);
+  content: "\201C";
+  font-size: 3em;
+  line-height: 0.1em;
+  margin-right: 0.15em;
+  vertical-align: -0.35em;
+  opacity: 0.3;
 }
+
+.note-content blockquote p {
+  display: inline;
+  color: var(--text-main);
+  font-style: italic;
+}
+
+.note-content code {
+  color: var(--accent-primary);
+  background: var(--tag-bg);
+  border: 1px solid var(--tag-border);
+  border-radius: 6px;
+  padding: 2px 8px;
+  font-size: 0.875em;
+}
+
+.note-content h2 {
+  margin-top: 2rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.note-content h3 {
+  margin-top: 1.5rem;
+}
+
+
+/* ── Note List / Cards ──────────────────────────────────────── */
+.note-list .note-area {
+  padding: 16px 20px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  margin-bottom: 12px;
+  background: var(--bg-card, var(--bg-main));
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.note-list .note-area:hover {
+  border-color: var(--accent-primary);
+  box-shadow: 0 8px 24px rgba(99, 102, 241, 0.1);
+  transform: translateY(-3px);
+}
+
+.note-list .note-area:nth-child(odd) {
+  background-color: var(--bg-card, var(--bg-main));
+}
+
 .note-area .note-title {
-  background-color: transparent;
+  background: none;
+  -webkit-text-fill-color: var(--text-main);
+  font-weight: 600;
+  font-size: 1.1rem;
   margin: 0;
   padding: 0;
 }
-.note-area .note-excerpt {
-  margin: 0;
+
+.note-page-section > .note-title {
+  font-weight: 800 !important;
+  font-size: 2.5rem !important;
+  background: var(--accent-gradient) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+  padding-bottom: 0.3em !important;
 }
+
+.note-list .note-area:hover .note-title a {
+  color: var(--accent-primary);
+}
+
+.note-area .note-excerpt {
+  margin: 8px 0 0 0;
+  color: var(--text-sub);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
 .muted-text {
   margin: 0;
-  opacity: .4;
-  font-size: .9em;
+  opacity: .5;
+  font-size: .85em;
+  color: var(--text-sub);
 }
-.block-box h4,.block-box h5 {
+
+.block-box h4, .block-box h5 {
   margin: 0;
-  opacity: .6;
+  opacity: .7;
+}
+
+.block-title {
+  font-weight: 600;
+  color: var(--text-main);
+  margin-bottom: 12px;
 }
 
 .note-list .note-tag-list {
-  margin: 0;
-  color: #999;
-  font-size: small;
-}
-.note-list .note-date {
-  margin: 0;
-  color: #666;
-  font-size: small;
-}
-.note-list .note-area:nth-child(odd) {
-  background-color: var(--bg-sub);
+  margin: 8px 0 0 0;
+  color: var(--tag-text);
+  font-size: 0.8rem;
 }
 
+.note-list .note-tag-list a {
+  color: var(--tag-text);
+  transition: color 0.2s ease;
+}
+
+.note-list .note-tag-list a:hover {
+  color: var(--accent-primary);
+}
+
+.note-list .note-date {
+  margin: 4px 0 0 0;
+  color: var(--text-muted, #999);
+  font-size: 0.8rem;
+}
+
+
+/* ── Meta Section ───────────────────────────────────────────── */
+.note-meta {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
+}
+
+.note-meta-title {
+  color: var(--text-sub);
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.note-references {
+  margin-top: 1.5rem;
+}
+
+
+/* ── Tippy Tooltip ──────────────────────────────────────────── */
 .tippy-box {
   max-height: 14rem;
   overflow: auto;
+  background-color: var(--bg-card, var(--bg-sub));
+  color: var(--text-main);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+  font-size: 0.9rem;
+  padding: 4px;
 }

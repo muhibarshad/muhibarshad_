@@ -1,3 +1,31 @@
+/* ═══════════════════════════════════════════════════════════════
+   PAGER — Modern Pagination
+   ═══════════════════════════════════════════════════════════════ */
+
 .pager {
-  margin-top: 20px;
+  margin-top: 2rem;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.pager a {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 18px;
+  background: var(--bg-card, var(--bg-main));
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  color: var(--text-main);
+  font-weight: 500;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.pager a:hover {
+  border-color: var(--accent-primary);
+  color: var(--accent-primary);
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.12);
+  transform: translateY(-1px);
 }

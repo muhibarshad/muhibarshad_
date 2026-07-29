@@ -30,9 +30,6 @@ export default function Header({ title, type, description }) {
     target.classList.toggle('is-active')
   }
 
-  // :TODO:
-  // <meta content="{{ site.url }}{{ page.url }}" property="og:url"> - NOTE: site.url might NOT be there in the config file.
-
   return (
     <>
       <Helmet>
@@ -41,7 +38,7 @@ export default function Header({ title, type, description }) {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-          href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,600;1,400;1,600&amp;display=swap"
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap"
           rel="stylesheet"
         />
         <meta content={title ? title : pageTitle} property="og:title" />
@@ -57,20 +54,12 @@ export default function Header({ title, type, description }) {
 
         <title>{pageTitle}</title>
 
-        {/* <link rel="apple-touch-icon" href="/img/favicon.svg" /> */}
         <link
           rel="icon"
           href="/img/favicon.svg"
           type="image/svg+xml"
           sizes="16x16"
         />
-        {/*
-          These are included using gatsby-browser.js - if I include these like shown here, there is a horrible FOUC
-        <link href="/css/style.css" rel="stylesheet" media="all" className="default" />
-        <link href="/css/main.css" rel="stylesheet" media="all" className="default" />
-        <link href="/css/custom.css" rel="stylesheet" media="all" className="default" />
-        <link href="/css/Util.css" rel="stylesheet" media="all" className="default" />
-        */}
       </Helmet>
 
       <nav
@@ -80,24 +69,10 @@ export default function Header({ title, type, description }) {
       >
         <div className="navbar-brand">
           <Link className="navbar-item" to="/">
-            {/* <svg
-              width="32"
-              height="32"
-              viewBox="0 0 80 80"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fillRule="evenodd"
-                clipRule="evenodd"
-                d="M36.9477 13.7742C38.3043 11.4086 41.6957 11.4086 43.0523 13.7742L70.5226 61.6774C71.8791 64.043 70.1834 67 67.4703 67H12.5297C9.81658 67 8.12089 64.043 9.47744 61.6774L36.9477 13.7742ZM40 16.9677L13.7506 62.7419H66.2494L40 16.9677Z"
-                fill="var(--text-main)"
-              />
-            </svg> */}
             <img
               src="/img/falcon-1.png"
-              style={{ maxHeight: '50px', width: 'auto' }}
-              alt="falcomImg.png"
+              style={{ maxHeight: '42px', width: 'auto', borderRadius: '8px' }}
+              alt="Logo"
             />
             <h4>{siteConfig.siteMetadata.title || 'muhibarshad'}</h4>
           </Link>

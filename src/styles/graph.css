@@ -1,12 +1,21 @@
 @import 'variables.css';
 
+/* ═══════════════════════════════════════════════════════════════
+   GRAPH — Note Visualization
+   ═══════════════════════════════════════════════════════════════ */
+
 #graph-container {
   border: 1px solid var(--border);
   background-color: var(--bg-sub);
+  border-radius: 16px;
+  overflow: hidden;
 }
+
 text {
   fill: var(--text-main);
-  opacity: 0.6;
+  opacity: 0.7;
+  font-family: 'Inter', 'IBM Plex Sans', sans-serif;
+  font-size: 12px;
 }
 
 text:hover {
@@ -20,8 +29,15 @@ text:hover {
 .note-graph {
   background-color: var(--bg-sub);
   border: 1px solid var(--border);
+  border-radius: 16px;
   height: 400px;
   overflow: hidden !important;
+  margin-top: 2rem;
+  transition: border-color 0.3s ease;
+}
+
+.note-graph:hover {
+  border-color: var(--accent-primary);
 }
 
 .note-graph svg {

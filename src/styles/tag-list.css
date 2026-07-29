@@ -1,15 +1,49 @@
 @import "variables.css";
 
+/* ═══════════════════════════════════════════════════════════════
+   TAG LIST — Modern Tag Cloud
+   ═══════════════════════════════════════════════════════════════ */
+
 .tag-name {
-  border: 1px solid var(--border);
-  background-color: var(--bg-main);
-  display: inline;
-  padding: 3px 5px;
+  background: var(--tag-bg);
+  border: 1px solid var(--tag-border);
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 16px;
   margin: 5px;
+  border-radius: 9999px;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   float: left;
+  list-style: none;
+}
+
+.tag-name:hover {
+  background: var(--accent-primary);
+  border-color: var(--accent-primary);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.2);
+}
+
+.tag-name a {
+  color: var(--tag-text);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: color 0.2s ease;
+}
+
+.tag-name:hover a {
+  color: #fff;
 }
 
 .tag-name .badge {
-  color: var(--text-sub);
-  font-size: small;
+  color: var(--text-muted);
+  font-size: 0.75rem;
+  margin-left: 6px;
+  opacity: 0.7;
+  transition: all 0.2s ease;
+}
+
+.tag-name:hover .badge {
+  color: rgba(255, 255, 255, 0.8);
 }

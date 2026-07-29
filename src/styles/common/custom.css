@@ -1,85 +1,178 @@
+/* ═══════════════════════════════════════════════════════════════
+   CUSTOM OVERRIDES — Premium Digital Garden
+   ═══════════════════════════════════════════════════════════════ */
+
 a:hover {
-  color: var(--link);
+  color: var(--link-hover, var(--link));
 }
 
 body {
-  background-color: var(--bg-sub);
+  background-color: var(--bg-main);
+  transition: background-color 0.3s ease;
 }
 
 .close-search {
-  font-size: smaller;
-  color: var(--text-sub);
+  font-size: 0.8rem;
+  color: var(--text-muted);
   float: right;
   cursor: pointer;
+  padding: 4px 10px;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  border: 1px solid var(--border);
+  background: var(--bg-sub);
+}
+
+.close-search:hover {
+  background: var(--accent-primary);
+  color: #fff;
+  border-color: var(--accent-primary);
 }
 
 .button-link {
   background: none !important;
   border: none;
   padding: 0 !important;
-  text-decoration: underline;
   cursor: pointer;
+  color: var(--link);
+  transition: color 0.2s ease;
+}
+
+.button-link:hover {
+  color: var(--link-hover, var(--accent-primary));
 }
 
 .pill {
-  background-color: var(--bg-main);
-  border-radius: 8px;
-  color: var(--text-main);
+  background: var(--tag-bg);
+  border-radius: 9999px;
+  color: var(--tag-text);
   display: inline-block;
-  padding: .5rem 1rem;
-  margin: .25rem;
+  padding: 6px 16px;
+  margin: 4px;
+  font-weight: 500;
+  font-size: 0.875rem;
+  border: 1px solid var(--tag-border);
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none;
+}
+
+.pill:hover {
+  background: var(--accent-primary);
+  color: #fff;
+  border-color: var(--accent-primary);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.25);
+}
+
+.pill a {
+  color: inherit;
+  text-decoration: none;
 }
 
 
-/* Header */
+/* ═══════════════════════════════════════════════════════════════
+   HEADER — Glass Navbar
+   ═══════════════════════════════════════════════════════════════ */
+
 nav.navbar .dropdown {
   position: relative;
 }
+
 .navbar-brand svg {
   margin-right: 1rem;
 }
+
 .navbar-brand h4 {
   margin-top: -4px;
+  font-weight: 700;
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: 1.1rem;
+  letter-spacing: -0.01em;
 }
+
 nav.navbar .dropdown-menu {
   display: none;
   position: absolute;
-  top: 2em;
-  width: 200px;
-  border:  1px solid var(--border);
+  top: 100%;
+  width: 220px;
+  background: var(--glass-bg) !important;
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+  padding: 6px;
+  margin-top: 8px;
 }
 
 nav.navbar .dropdown:hover .dropdown-menu {
   display: block;
+  animation: dropdownSlide 0.25s ease-out;
+}
+
+@keyframes dropdownSlide {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 nav.navbar {
-  background-color: var(--bg-sub) !important;
+  background: var(--glass-bg) !important;
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border-bottom: 1px solid var(--border-subtle, var(--border));
 }
 
 .dropdown-menu {
-  background-color: var(--bg-sub) !important;
+  background: var(--glass-bg) !important;
 }
 
 .dropdown-toggle::after {
   display: inline-block;
-  margin-left: .255em;
-  vertical-align: .255em;
+  margin-left: .3em;
+  vertical-align: .2em;
   content: "";
-  border-top: .3em solid;
-  border-right: .3em solid transparent;
+  border-top: .28em solid;
+  border-right: .28em solid transparent;
   border-bottom: 0;
-  border-left: .3em solid transparent;
+  border-left: .28em solid transparent;
+  transition: transform 0.2s ease;
+}
+
+.dropdown:hover .dropdown-toggle::after {
+  transform: rotate(180deg);
 }
 
 .nav-link {
   text-decoration: none;
   color: var(--link);
 }
+
 .navbar-brand {
   color: var(--text-main);
 }
+
 .navbar-toggler {
   color: var(--text-main);
 }
 
+
+/* ═══════════════════════════════════════════════════════════════
+   LEAD TEXT — Hero Section
+   ═══════════════════════════════════════════════════════════════ */
+
+.lead {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: var(--text-sub);
+  font-weight: 400;
+  max-width: 600px;
+}
